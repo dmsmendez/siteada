@@ -5,10 +5,14 @@
 //string - todo texto está em  "aspas"
 // igual == diferente!=
 //alert("texto") - que se deu certo or not
+// eventlistener - onde, qual e quando
 
-if (document.getElementByID("name").value != "" && document.getElementByID("email").value != ""){
+document.getElementByID("botaoEnviar").addEventListener("click", validaFormulario )
+
+function validaFormulario () {
+  if (document.getElementByID("name").value != "" && document.getElementByID("email").value != "" && document.getElementByID("telefone").falue != ){
   alert("Prontinho! Você receberá as novidades por e-mail.")
 }else{
-
+  alert("Por favor, preencha todos os campos")
 }
-
+}
